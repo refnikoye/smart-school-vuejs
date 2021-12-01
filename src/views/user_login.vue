@@ -33,7 +33,8 @@
                                 </div>
                             </div><br>
                             <button type="submit" class="btn btn-primary">LOGIN</button>
-
+                            <br><br>
+                            <router-link :to="{name: 'login'}" class="" >Login as Admin</router-link>
                         </form>                        
 
                     </div>

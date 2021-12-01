@@ -26,7 +26,8 @@
                             </div><br>
                             <button type="submit" class="btn btn-primary">LOGIN</button>
                             <router-link :to="{name: 'signup'}" class="btn btn-md btn-success btn-signup" >Sing Up</router-link>
-
+                            <br><br>
+                            <router-link :to="{name: 'userlogin'}" class="" >Login as User</router-link>
                         </form>                        
 
                     </div>
