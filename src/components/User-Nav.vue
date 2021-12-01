@@ -32,7 +32,7 @@ export default {
                 })
             }
 
-            //axios.defaults.headers.common.Authorization = `Bearer ${token}`
+            axios.defaults.headers.common.Authorization = `Bearer ${token}`
             axios.get(`https://qodey.com/smart-school/laravel8/public/api/user-message/${userID}`)
             .then(response => {
                 console.log(response)
@@ -61,7 +61,7 @@ export default {
 
         function logout() {
 
-            //axios.defaults.headers.common.Authorization = `Bearer ${token}`
+            axios.defaults.headers.common.Authorization = `Bearer ${token}`
             axios.post('https://qodey.com/smart-school/laravel8/public/api/logoutuser')
             .then(response => {
 

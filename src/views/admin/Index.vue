@@ -52,7 +52,7 @@ export default {
 
         onMounted(() => {
     
-            //axios.defaults.headers.common.Authorization = `Bearer ${token}`
+            axios.defaults.headers.common.Authorization = `Bearer ${token}`
             axios.get(`https://qodey.com/smart-school/laravel8/public/api/userbyschool/${schoolid}`)
             .then(response => {
                 users.value = response.data.data
