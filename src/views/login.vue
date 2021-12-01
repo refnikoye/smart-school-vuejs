@@ -62,7 +62,7 @@ export default {
 
             console.log(email)
 
-            axios.post('https://qodey.com/smart-shcool/laravel8/public/api/loginadmin', {
+            axios.post('https://qodey.com/smart-school/laravel8/public/api/loginadmin', {
                 email,
                 password
             }).then(response => {

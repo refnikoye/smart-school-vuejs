@@ -63,7 +63,7 @@ export default {
             let email = user.email
             let role = user.role
 
-            axios.post('https://qodey.com/smart-shcool/laravel8/public/api/user', {
+            axios.post('https://qodey.com/smart-school/laravel8/public/api/user', {
                 email,
                 role,
                 school_id

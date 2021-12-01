@@ -53,7 +53,7 @@ export default {
         onMounted(() => {
     
             axios.defaults.headers.common.Authorization = `Bearer ${token}`
-            axios.get(`https://qodey.com/smart-shcool/laravel8/public/api/userbyschool/${schoolid}`)
+            axios.get(`https://qodey.com/smart-school/laravel8/public/api/userbyschool/${schoolid}`)
             .then(response => {
                 users.value = response.data.data
             }).catch(error => {
@@ -63,7 +63,7 @@ export default {
 
         function userDelete(id) {
             
-        axios.delete(`https://qodey.com/smart-shcool/laravel8/public/api/user/${id}`)
+        axios.delete(`https://qodey.com/smart-school/laravel8/public/api/user/${id}`)
         .then(() => {
             
             users.value.splice(users.value.indexOf(id));

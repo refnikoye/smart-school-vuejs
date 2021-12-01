@@ -69,7 +69,7 @@ export default {
             let password = user.password
             let school_id = user.schoolid
 
-            axios.post('https://qodey.com/smart-shcool/laravel8/public/api/loginuser', {
+            axios.post('https://qodey.com/smart-school/laravel8/public/api/loginuser', {
                 username,
                 password,
                 school_id
