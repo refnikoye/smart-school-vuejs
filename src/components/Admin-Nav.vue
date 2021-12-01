@@ -30,7 +30,7 @@ export default {
 
         function logout() {
 
-            axios.defaults.headers.common.Authorization = `Bearer ${token}`
+            //axios.defaults.headers.common.Authorization = `Bearer ${token}`
             axios.post('https://qodey.com/smart-school/laravel8/public/api/logoutadmin')
             .then(response => {
 

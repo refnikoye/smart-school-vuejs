@@ -30,7 +30,7 @@ export default {
 
         onMounted(() => {
            
-            axios.defaults.headers.common.Authorization = `Bearer ${token}`
+            //axios.defaults.headers.common.Authorization = `Bearer ${token}`
             axios.get(`https://qodey.com/smart-shcool/laravel8/public/api/userbyschool/${school_id}`)
             .then(response => {
             const teacherObjects = response.data.data.filter(user => user.role === 'Teacher')
